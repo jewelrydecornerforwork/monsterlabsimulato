@@ -9,17 +9,6 @@ export const metadata: Metadata = {
     "Use the Monster Lab Simulator Recipe Calculator to find which Fulus you can create from any essence combination. Plan your synthesis and avoid wasting resources.",
 };
 
-function ImagePlaceholder({ label, aspect = "16/9" }: { label: string; aspect?: string }) {
-  return (
-    <div
-      className={`w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6`}
-      style={{ aspectRatio: aspect }}
-    >
-      <span className="text-sm text-gray-500">{label}</span>
-    </div>
-  );
-}
-
 const calculatorFaqItems = [
   {
     question: "How do I use the Recipe Calculator?",
@@ -62,14 +51,6 @@ export default function RecipesPage() {
           Pick three essences, hit Calculate, and instantly see which Fulus you
           can hatch. Stop guessing and start planning every synthesis.
         </p>
-      </section>
-
-      {/* Image Placeholder */}
-      <section className="mb-10">
-        <ImagePlaceholder
-          label="Calculator screenshot or hero banner placeholder"
-          aspect="21/9"
-        />
       </section>
 
       {/* Calculator */}

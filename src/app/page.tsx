@@ -2,17 +2,6 @@ import Link from "next/link";
 import FAQ from "@/components/FAQ";
 import SEOArticle from "@/components/SEOArticle";
 
-function ImagePlaceholder({ label, aspect = "16/9" }: { label: string; aspect?: string }) {
-  return (
-    <div
-      className={`w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6`}
-      style={{ aspectRatio: aspect }}
-    >
-      <span className="text-sm text-gray-500">{label}</span>
-    </div>
-  );
-}
-
 const features = [
   {
     icon: "F",
@@ -92,49 +81,42 @@ export default function HomePage() {
       <section className="relative py-16 sm:py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            {/* Left */}
-            <div>
-              <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
-                Monster Lab Simulator
-                <br />
-                <span className="text-primary-light">Tools & Wiki</span>
-              </h1>
-              <p className="text-lg text-gray-400 mb-6">
-                Create, raise, and battle your own Fulus &mdash; track recipes, monsters, and lab routes in one place.
-              </p>
-              <ul className="space-y-2 text-gray-300 mb-8">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-light mt-1">&#10003;</span>
-                  Plan your essence recipes with an interactive calculator.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-light mt-1">&#10003;</span>
-                  Browse every Fulu with stats, elements, and roles.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary-light mt-1">&#10003;</span>
-                  Follow quick guides for lab upgrades, combat, and economy.
-                </li>
-              </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link
-                  href="/tools/recipes"
-                  className="px-7 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-colors shadow-lg shadow-primary/25 text-center"
-                >
-                  Open Recipe Calculator
-                </Link>
-                <Link
-                  href="/monsters"
-                  className="px-7 py-3 bg-surface border border-surface-light/50 hover:border-primary/50 text-white font-semibold rounded-lg transition-colors text-center"
-                >
-                  Browse Monster Database
-                </Link>
-              </div>
-            </div>
-            {/* Right */}
-            <div>
-              <ImagePlaceholder label="Hero Image Placeholder &mdash; Lab overview screenshot here" aspect="16/9" />
+          <div className="max-w-3xl">
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
+              Monster Lab Simulator
+              <br />
+              <span className="text-primary-light">Tools & Wiki</span>
+            </h1>
+            <p className="text-lg text-gray-400 mb-6">
+              Create, raise, and battle your own Fulus &mdash; track recipes, monsters, and lab routes in one place.
+            </p>
+            <ul className="space-y-2 text-gray-300 mb-8">
+              <li className="flex items-start gap-2">
+                <span className="text-primary-light mt-1">&#10003;</span>
+                Plan your essence recipes with an interactive calculator.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-light mt-1">&#10003;</span>
+                Browse every Fulu with stats, elements, and roles.
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-light mt-1">&#10003;</span>
+                Follow quick guides for lab upgrades, combat, and economy.
+              </li>
+            </ul>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/tools/recipes"
+                className="px-7 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-colors shadow-lg shadow-primary/25 text-center"
+              >
+                Open Recipe Calculator
+              </Link>
+              <Link
+                href="/monsters"
+                className="px-7 py-3 bg-surface border border-surface-light/50 hover:border-primary/50 text-white font-semibold rounded-lg transition-colors text-center"
+              >
+                Browse Monster Database
+              </Link>
             </div>
           </div>
         </div>
@@ -143,24 +125,17 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
         {/* ===== 2. What is Monster Lab Simulator? ===== */}
         <section>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-4">What is Monster Lab Simulator?</h2>
-              <div className="space-y-4 text-gray-400 leading-relaxed">
-                <p>
-                  In Monster Lab Simulator you run your own creature-breeding facility. Collect elemental essences &mdash; Fire, Water, Nature, Neutral, Shadow, and Light &mdash; and combine them inside a synthesis machine to produce eggs. Each unique combination hatches a different Fulu, a monster with its own family traits, elemental affinity, and combat abilities.
-                </p>
-                <p>
-                  Running the lab goes beyond breeding. You manage machines, keep the workspace clean with helper robots, and fulfill incoming orders to grow your economy. Every upgrade you invest in unlocks new wings of the laboratory, giving you access to rarer essences, better equipment, and more powerful recipes.
-                </p>
-                <p>
-                  When your Fulus are ready, assemble them into teams and take on turn-based battles. Progress through story challenges, enter tournaments, and test your roster against increasingly tough opponents. Balancing lab management with smart team-building is the key to becoming the top lab owner.
-                </p>
-              </div>
-            </div>
-            <div>
-              <ImagePlaceholder label="Feature Image Placeholder &mdash; Fulu lineup or key art" aspect="4/3" />
-            </div>
+          <h2 className="text-3xl font-bold text-white mb-4">What is Monster Lab Simulator?</h2>
+          <div className="space-y-4 text-gray-400 leading-relaxed max-w-4xl">
+            <p>
+              In Monster Lab Simulator you run your own creature-breeding facility. Collect elemental essences &mdash; Fire, Water, Nature, Neutral, Shadow, and Light &mdash; and combine them inside a synthesis machine to produce eggs. Each unique combination hatches a different Fulu, a monster with its own family traits, elemental affinity, and combat abilities.
+            </p>
+            <p>
+              Running the lab goes beyond breeding. You manage machines, keep the workspace clean with helper robots, and fulfill incoming orders to grow your economy. Every upgrade you invest in unlocks new wings of the laboratory, giving you access to rarer essences, better equipment, and more powerful recipes.
+            </p>
+            <p>
+              When your Fulus are ready, assemble them into teams and take on turn-based battles. Progress through story challenges, enter tournaments, and test your roster against increasingly tough opponents. Balancing lab management with smart team-building is the key to becoming the top lab owner.
+            </p>
           </div>
         </section>
 
@@ -194,58 +169,43 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="bg-surface rounded-xl border border-surface-light/30 overflow-hidden flex flex-col">
-              <div className="p-4">
-                <ImagePlaceholder label="Calculator UI placeholder" aspect="16/10" />
-              </div>
-              <div className="p-6 pt-2 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-2">Recipe Calculator</h3>
-                <p className="text-sm text-gray-400 mb-4 flex-1">
-                  Pick essences, see which Fulus you can hatch, and avoid wasting rare resources.
-                </p>
-                <Link
-                  href="/tools/recipes"
-                  className="inline-flex items-center justify-center px-5 py-2.5 bg-primary hover:bg-primary-dark text-white text-sm font-medium rounded-lg transition-colors"
-                >
-                  Use the Calculator
-                </Link>
-              </div>
+            <div className="bg-surface rounded-xl border border-surface-light/30 p-6 flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-2">Recipe Calculator</h3>
+              <p className="text-sm text-gray-400 mb-4 flex-1">
+                Pick essences, see which Fulus you can hatch, and avoid wasting rare resources.
+              </p>
+              <Link
+                href="/tools/recipes"
+                className="inline-flex items-center justify-center px-5 py-2.5 bg-primary hover:bg-primary-dark text-white text-sm font-medium rounded-lg transition-colors"
+              >
+                Use the Calculator
+              </Link>
             </div>
             {/* Card 2 */}
-            <div className="bg-surface rounded-xl border border-surface-light/30 overflow-hidden flex flex-col">
-              <div className="p-4">
-                <ImagePlaceholder label="Monster grid screenshot placeholder" aspect="16/10" />
-              </div>
-              <div className="p-6 pt-2 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-2">Monster Database</h3>
-                <p className="text-sm text-gray-400 mb-4 flex-1">
-                  Browse every Fulu with stats, elements, rarity, and recommended roles.
-                </p>
-                <Link
-                  href="/monsters"
-                  className="inline-flex items-center justify-center px-5 py-2.5 bg-surface-light hover:bg-surface-light/80 text-white text-sm font-medium rounded-lg transition-colors border border-surface-light/50"
-                >
-                  View All Monsters
-                </Link>
-              </div>
+            <div className="bg-surface rounded-xl border border-surface-light/30 p-6 flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-2">Monster Database</h3>
+              <p className="text-sm text-gray-400 mb-4 flex-1">
+                Browse every Fulu with stats, elements, rarity, and recommended roles.
+              </p>
+              <Link
+                href="/monsters"
+                className="inline-flex items-center justify-center px-5 py-2.5 bg-surface-light hover:bg-surface-light/80 text-white text-sm font-medium rounded-lg transition-colors border border-surface-light/50"
+              >
+                View All Monsters
+              </Link>
             </div>
             {/* Card 3 */}
-            <div className="bg-surface rounded-xl border border-surface-light/30 overflow-hidden flex flex-col">
-              <div className="p-4">
-                <ImagePlaceholder label="Guide page screenshot placeholder" aspect="16/10" />
-              </div>
-              <div className="p-6 pt-2 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-white mb-2">Guides & Wiki</h3>
-                <p className="text-sm text-gray-400 mb-4 flex-1">
-                  Learn the essence system, lab economy, and combat strategies with quick, structured guides.
-                </p>
-                <Link
-                  href="/guide"
-                  className="inline-flex items-center justify-center px-5 py-2.5 bg-surface-light hover:bg-surface-light/80 text-white text-sm font-medium rounded-lg transition-colors border border-surface-light/50"
-                >
-                  Start with Beginner&apos;s Guide
-                </Link>
-              </div>
+            <div className="bg-surface rounded-xl border border-surface-light/30 p-6 flex flex-col">
+              <h3 className="text-xl font-bold text-white mb-2">Guides & Wiki</h3>
+              <p className="text-sm text-gray-400 mb-4 flex-1">
+                Learn the essence system, lab economy, and combat strategies with quick, structured guides.
+              </p>
+              <Link
+                href="/guide"
+                className="inline-flex items-center justify-center px-5 py-2.5 bg-surface-light hover:bg-surface-light/80 text-white text-sm font-medium rounded-lg transition-colors border border-surface-light/50"
+              >
+                Start with Beginner&apos;s Guide
+              </Link>
             </div>
           </div>
         </section>
@@ -262,25 +222,19 @@ export default function HomePage() {
                 step: 1,
                 title: "Mix Essences",
                 text: "Combine Fire, Water, Nature, Neutral, Shadow, and Light essences to create eggs.",
-                placeholder: "Essence vials + machine screenshot placeholder",
               },
               {
                 step: 2,
                 title: "Grow Your Lab",
                 text: "Upgrade machines, keep your lab clean, and fulfill orders to stabilize your economy.",
-                placeholder: "Lab layout screenshot placeholder",
               },
               {
                 step: 3,
                 title: "Battle & Compete",
                 text: "Assemble teams of Fulus and take them into turn-based battles and tournaments.",
-                placeholder: "Battle UI screenshot placeholder",
               },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <div className="mb-4">
-                  <ImagePlaceholder label={item.placeholder} aspect="16/10" />
-                </div>
                 <div className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary-light font-bold text-lg mb-3">
                   {item.step}
                 </div>
