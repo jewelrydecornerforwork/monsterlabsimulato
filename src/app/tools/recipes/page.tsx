@@ -1,41 +1,12 @@
 import { Metadata } from "next";
 import { Suspense } from "react";
 import RecipeCalculator from "@/components/RecipeCalculator";
-import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
   title: "Recipe Calculator - Monster Lab Simulator",
   description:
     "Use the Monster Lab Simulator Recipe Calculator to find which Fulus you can create from any essence combination. Plan your synthesis and avoid wasting resources.",
 };
-
-const calculatorFaqItems = [
-  {
-    question: "How do I use the Recipe Calculator?",
-    answer:
-      "Select one essence for each of the three slots using the dropdown menus. Optionally pick a target rarity, then press Calculate. The tool will show every Fulu that matches your combination.",
-  },
-  {
-    question: "Does essence order matter?",
-    answer:
-      "No. The calculator treats essences as an unordered set — Fire + Water + Nature gives the same results as Water + Nature + Fire.",
-  },
-  {
-    question: "Why am I getting no results?",
-    answer:
-      "Not every combination produces a Fulu. Try swapping one essence or removing the rarity filter. Some recipes also require a minimum lab level that isn't reflected here yet.",
-  },
-  {
-    question: "Can I share a recipe link?",
-    answer:
-      'Yes! After calculating, copy the page URL — it contains query parameters like <code class="text-primary-light">?e1=fire&amp;e2=water&amp;e3=neutral</code> that pre-fill the calculator for anyone who opens the link.',
-  },
-  {
-    question: "Where does the data come from?",
-    answer:
-      "All recipes and monster data are sourced from the Monster Lab Simulator Early Access build. We update the database after each game patch.",
-  },
-];
 
 export default function RecipesPage() {
   return (
@@ -47,10 +18,13 @@ export default function RecipesPage() {
           <br />
           <span className="text-primary-light">Recipe Calculator</span>
         </h1>
-        <p className="text-lg text-gray-400 max-w-2xl">
+        <p className="text-lg text-gray-400 max-w-2xl mb-8">
           Pick three essences, hit Calculate, and instantly see which Fulus you
           can hatch. Stop guessing and start planning every synthesis.
         </p>
+        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
+          <span className="text-sm text-gray-500">Calculator hero banner &mdash; synthesis machine or essence selection screenshot</span>
+        </div>
       </section>
 
       {/* Calculator */}
@@ -61,7 +35,7 @@ export default function RecipesPage() {
       </section>
 
       {/* How to Use */}
-      <section className="mb-16">
+      <section>
         <h2 className="text-2xl font-bold text-white mb-6">
           How to Use This Calculator
         </h2>
@@ -96,16 +70,6 @@ export default function RecipesPage() {
               <p className="text-sm text-gray-400">{item.text}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section>
-        <h2 className="text-2xl font-bold text-white mb-6">
-          Recipe Calculator FAQ
-        </h2>
-        <div className="max-w-3xl">
-          <FAQ items={calculatorFaqItems} />
         </div>
       </section>
     </div>

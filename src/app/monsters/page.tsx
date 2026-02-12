@@ -33,9 +33,12 @@ export default function MonstersPage() {
       {/* Hero */}
       <section className="mb-8">
         <h1 className="text-4xl font-bold text-white mb-2">Monster Database</h1>
-        <p className="text-gray-400">
+        <p className="text-gray-400 mb-8">
           Browse all {allMonsters.length} monsters. Search by name or filter by element, rarity, and role.
         </p>
+        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
+          <span className="text-sm text-gray-500">Monster Database banner &mdash; Fulu lineup or collection screenshot</span>
+        </div>
       </section>
 
       {/* Filters */}

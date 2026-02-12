@@ -32,9 +32,12 @@ export default function EssencesEggsPage() {
         <h1 className="text-4xl font-bold text-white mb-4">
           Essences & Eggs <span className="text-primary-light">Guide</span>
         </h1>
-        <p className="text-xl text-gray-400">
+        <p className="text-xl text-gray-400 mb-8">
           Master the foundation of monster breeding
         </p>
+        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
+          <span className="text-sm text-gray-500">Essences &amp; Eggs banner &mdash; essence vials or egg hatching screenshot</span>
+        </div>
       </section>
 
       {/* Essence Types */}

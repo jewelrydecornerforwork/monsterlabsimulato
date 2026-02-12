@@ -1,45 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
   title: "Beginner's Guide - Monster Lab Simulator",
   description:
     "New to Monster Lab Simulator? Learn the essential tips, tricks, and strategies to master your lab in the first 3 hours. Complete beginner walkthrough.",
 };
-
-const faqItems = [
-  {
-    question: "What's the best starter monster?",
-    answer:
-      "Ember Pup (Fire + Fire + Neutral) is widely considered the best starter DPS monster due to its high attack and low crafting requirements. Pair it with Aqualing for defense and Sproutling for healing.",
-  },
-  {
-    question: "How do I get Shadow and Light essences?",
-    answer:
-      "Shadow and Light essences unlock at Lab Level 5. Focus on upgrading your lab through the early game using Fire, Water, Nature, and Neutral essences. Once you reach Level 5, these powerful essence types become available.",
-  },
-  {
-    question: "Should I focus on PVP or PVE first?",
-    answer:
-      "Start with PVE to build your monster roster and earn resources. PVP becomes more rewarding once you have a solid team of rare+ monsters, typically around mid-game.",
-  },
-  {
-    question: "How does the Amber system work?",
-    answer:
-      "Amber is a special material that enhances egg quality during synthesis. Higher-quality Amber increases the chance of getting better stat rolls on your monsters. Save your best Amber for legendary recipes.",
-  },
-  {
-    question: "What's the fastest way to earn currency?",
-    answer:
-      "Create a Sproutling early for passive income. Combine it with farming-optimized stages and the Resource Farming Team composition for maximum efficiency. Lab upgrades that boost resource generation also help significantly.",
-  },
-  {
-    question: "Can I reset or re-craft a monster?",
-    answer:
-      "Monsters cannot be directly reset, but you can recycle unwanted monsters for a portion of the essences used. This makes planning with the Recipe Calculator even more important to avoid waste.",
-  },
-];
 
 export default function GuidePage() {
   return (
@@ -51,9 +17,12 @@ export default function GuidePage() {
           <br />
           <span className="text-primary-light">Beginner&apos;s Guide</span>
         </h1>
-        <p className="text-xl text-gray-400">
+        <p className="text-xl text-gray-400 mb-8">
           Everything you need to know in your first 3 hours
         </p>
+        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
+          <span className="text-sm text-gray-500">Guide hero banner &mdash; tutorial or lab overview screenshot</span>
+        </div>
       </section>
 
       {/* First 5 Steps */}
@@ -201,7 +170,7 @@ export default function GuidePage() {
       </section>
 
       {/* Combat Intro */}
-      <section className="mb-16">
+      <section>
         <h2 className="text-2xl font-bold text-white mb-4">Your First Battle Team</h2>
         <p className="text-gray-400 text-sm mb-4">
           A balanced team needs three roles: Tank (absorbs damage), DPS (deals damage), and Support (heals and buffs).
@@ -230,12 +199,6 @@ export default function GuidePage() {
             .
           </p>
         </div>
-      </section>
-
-      {/* FAQ */}
-      <section>
-        <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-        <FAQ items={faqItems} />
       </section>
     </div>
   );
