@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllMonsters } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://monsterlabsimulator.wiki";
+  const baseUrl = "https://monsterlabsimulato.wiki";
 
   const monsters = getAllMonsters();
   const monsterPages = monsters.map((m) => ({
