@@ -1,6 +1,5 @@
 import Link from "next/link";
 import FAQ from "@/components/FAQ";
-import SEOArticle from "@/components/SEOArticle";
 
 const features = [
   {
@@ -259,57 +258,6 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto">
             <FAQ items={homeFaqItems} />
           </div>
-        </section>
-
-        {/* ===== 7. SEO Content Block ===== */}
-        <section>
-          <SEOArticle>
-            <h2>Monster Lab Simulator &mdash; The Essence-to-Fulu Pipeline</h2>
-            <p>
-              At its core, <strong>Monster Lab Simulator</strong> is a game about resource transformation. You start with raw elemental essences &mdash; Fire, Water, Nature, Neutral, Shadow, and Light &mdash; and feed them into a synthesis machine in groups of three. Each combination hatches a different Fulu, a creature tied to a specific elemental family with its own base stats, abilities, and growth curve. The sheer number of possible combinations makes planning essential, and that is exactly where our <a href="/tools/recipes">Recipe Calculator</a> comes in.
-            </p>
-            <p>
-              Understanding which essences produce which Fulu is the single most important skill in the game. Wasting rare Shadow or Light essences on an accidental common-tier creature can set you back hours of farming. By entering your available essences into the calculator before every synthesis, you eliminate guesswork and make every crafting session count.
-            </p>
-
-            <h2>Why Monster Stats and Roles Matter</h2>
-            <p>
-              Not all Fulus are created equal. Each one fills a specific combat role &mdash; Tank, DPS, or Support &mdash; and those roles determine how you build your battle teams. A team of three DPS monsters might burst down weak opponents quickly but will crumble against a well-balanced squad with a dedicated Tank and Support. Our <a href="/monsters">Monster Database</a> lists every Fulu with complete stats, element, rarity, and recommended role so you can plan your roster before you ever touch the synthesis machine.
-            </p>
-            <p>
-              Rarity also plays a major role. Common Fulus have modest stat ranges, while Legendary creatures can reach nearly double those numbers. The <strong>Amber system</strong> lets you boost egg rarity during synthesis, but Amber is scarce &mdash; so knowing exactly when and where to spend it is critical. Check our <a href="/wiki/essences-eggs">Essences &amp; Eggs Guide</a> for a full breakdown of rarity mechanics.
-            </p>
-
-            <h2>Lab Management and the Economy Loop</h2>
-            <p>
-              Breeding monsters is only half the game. Your lab is a living system that needs constant attention. Machines degrade, workspaces get messy, and incoming orders demand specific Fulus at specific rarities. Hiring helper cleaning robots keeps your lab running smoothly, while fulfilling orders generates the currency you need to unlock new lab wings and upgrade equipment.
-            </p>
-            <p>
-              The economy loop is straightforward: collect essences, synthesize Fulus, sell or deploy them for currency, reinvest in lab upgrades, and repeat. The trick is optimizing each step. Our <a href="/wiki/lab-economy">Lab &amp; Economy Guide</a> walks through upgrade priorities, machine placement, and the fastest paths to self-sustaining income.
-            </p>
-
-            <h2>Combat, Teams, and Tournaments</h2>
-            <p>
-              When your Fulus are ready for action, the turn-based combat system puts your team-building skills to the test. Elements create a rock-paper-scissors dynamic &mdash; Fire beats Nature, Water beats Fire, Nature beats Water &mdash; while Shadow and Light counter each other. Speed determines turn order, and abilities range from direct damage to healing, shields, and debuffs.
-            </p>
-            <p>
-              Building a balanced team means covering multiple elements, including at least one Tank and one Support alongside your damage dealers. The <a href="/wiki/combat-teams">Combat &amp; Teams Guide</a> provides sample compositions for every stage of the game, from your first PVE run to competitive PVP tournaments.
-            </p>
-
-            <h2>How This Site Helps You Play Smarter</h2>
-            <p>
-              Monster Lab Simulator rewards preparation. Every essence you spend, every machine you upgrade, and every team slot you fill should be a deliberate choice. This wiki gives you the data and tools to make those choices confidently:
-            </p>
-            <ul>
-              <li><strong>Recipe Calculator</strong> &mdash; enter essences, see results, avoid waste. <a href="/tools/recipes">Try it now</a>.</li>
-              <li><strong>Monster Database</strong> &mdash; full stats, elements, and roles for every Fulu. <a href="/monsters">Browse monsters</a>.</li>
-              <li><strong>Beginner&apos;s Guide</strong> &mdash; a step-by-step walkthrough for your first few hours. <a href="/guide">Read the guide</a>.</li>
-              <li><strong>Advanced Wiki</strong> &mdash; deep dives into <a href="/wiki/essences-eggs">essences</a>, <a href="/wiki/combat-teams">combat</a>, and <a href="/wiki/lab-economy">lab economy</a>.</li>
-            </ul>
-            <p>
-              Whether you are hatching your first Ember Pup or chasing a Legendary Celestial Dragon, planning ahead is what separates a cluttered lab from a thriving one. Use the tools, read the guides, and make every synthesis count.
-            </p>
-          </SEOArticle>
         </section>
       </div>
     </div>
