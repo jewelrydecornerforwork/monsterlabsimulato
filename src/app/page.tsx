@@ -80,44 +80,42 @@ export default function HomePage() {
       {/* ===== 1. Hero Section ===== */}
       <section className="relative py-16 sm:py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-transparent to-transparent" />
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
-              Monster Lab Simulator
-              <br />
-              <span className="text-primary-light">Tools & Wiki</span>
-            </h1>
-            <p className="text-lg text-gray-400 mb-6">
-              Create, raise, and battle your own Fulus &mdash; track recipes, monsters, and lab routes in one place.
-            </p>
-            <ul className="space-y-2 text-gray-300 mb-8">
-              <li className="flex items-start gap-2">
-                <span className="text-primary-light mt-1">&#10003;</span>
-                Plan your essence recipes with an interactive calculator.
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary-light mt-1">&#10003;</span>
-                Browse every Fulu with stats, elements, and roles.
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary-light mt-1">&#10003;</span>
-                Follow quick guides for lab upgrades, combat, and economy.
-              </li>
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/tools/recipes"
-                className="px-7 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-colors shadow-lg shadow-primary/25 text-center"
-              >
-                Open Recipe Calculator
-              </Link>
-              <Link
-                href="/monsters"
-                className="px-7 py-3 bg-surface border border-surface-light/50 hover:border-primary/50 text-white font-semibold rounded-lg transition-colors text-center"
-              >
-                Browse Monster Database
-              </Link>
-            </div>
+        <div className="max-w-7xl mx-auto relative z-10 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
+            Monster Lab Simulator
+            <br />
+            <span className="text-primary-light">Tools & Wiki</span>
+          </h1>
+          <p className="text-lg text-gray-400 mb-6 max-w-2xl mx-auto">
+            Create, raise, and battle your own Fulus &mdash; track recipes, monsters, and lab routes in one place.
+          </p>
+          <ul className="space-y-2 text-gray-300 mb-8 inline-block text-left">
+            <li className="flex items-start gap-2">
+              <span className="text-primary-light mt-1">&#10003;</span>
+              Plan your essence recipes with an interactive calculator.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary-light mt-1">&#10003;</span>
+              Browse every Fulu with stats, elements, and roles.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary-light mt-1">&#10003;</span>
+              Follow quick guides for lab upgrades, combat, and economy.
+            </li>
+          </ul>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              href="/tools/recipes"
+              className="px-7 py-3 bg-primary hover:bg-primary-dark text-white font-semibold rounded-lg transition-colors shadow-lg shadow-primary/25 text-center"
+            >
+              Open Recipe Calculator
+            </Link>
+            <Link
+              href="/monsters"
+              className="px-7 py-3 bg-surface border border-surface-light/50 hover:border-primary/50 text-white font-semibold rounded-lg transition-colors text-center"
+            >
+              Browse Monster Database
+            </Link>
           </div>
         </div>
       </section>
@@ -125,17 +123,24 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
         {/* ===== 2. What is Monster Lab Simulator? ===== */}
         <section>
-          <h2 className="text-3xl font-bold text-white mb-4">What is Monster Lab Simulator?</h2>
-          <div className="space-y-4 text-gray-400 leading-relaxed max-w-4xl">
-            <p>
-              In Monster Lab Simulator you run your own creature-breeding facility. Collect elemental essences &mdash; Fire, Water, Nature, Neutral, Shadow, and Light &mdash; and combine them inside a synthesis machine to produce eggs. Each unique combination hatches a different Fulu, a monster with its own family traits, elemental affinity, and combat abilities.
-            </p>
-            <p>
-              Running the lab goes beyond breeding. You manage machines, keep the workspace clean with helper robots, and fulfill incoming orders to grow your economy. Every upgrade you invest in unlocks new wings of the laboratory, giving you access to rarer essences, better equipment, and more powerful recipes.
-            </p>
-            <p>
-              When your Fulus are ready, assemble them into teams and take on turn-based battles. Progress through story challenges, enter tournaments, and test your roster against increasingly tough opponents. Balancing lab management with smart team-building is the key to becoming the top lab owner.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-white mb-4">What is Monster Lab Simulator?</h2>
+              <div className="space-y-4 text-gray-400 leading-relaxed">
+                <p>
+                  In Monster Lab Simulator you run your own creature-breeding facility. Collect elemental essences &mdash; Fire, Water, Nature, Neutral, Shadow, and Light &mdash; and combine them inside a synthesis machine to produce eggs. Each unique combination hatches a different Fulu, a monster with its own family traits, elemental affinity, and combat abilities.
+                </p>
+                <p>
+                  Running the lab goes beyond breeding. You manage machines, keep the workspace clean with helper robots, and fulfill incoming orders to grow your economy. Every upgrade you invest in unlocks new wings of the laboratory, giving you access to rarer essences, better equipment, and more powerful recipes.
+                </p>
+                <p>
+                  When your Fulus are ready, assemble them into teams and take on turn-based battles. Progress through story challenges, enter tournaments, and test your roster against increasingly tough opponents. Balancing lab management with smart team-building is the key to becoming the top lab owner.
+                </p>
+              </div>
+            </div>
+            <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "4/3" }}>
+              <span className="text-sm text-gray-500">Feature Image &mdash; Fulu lineup or key art</span>
+            </div>
           </div>
         </section>
 
