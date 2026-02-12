@@ -1,0 +1,52 @@
+[
+  {
+    "id": "starter-squad",
+    "name": "Starter Squad",
+    "description": "The best team for your first few hours. Easy to craft, covers all roles.",
+    "phase": "early",
+    "monsters": ["ember-pup", "aqualing", "sproutling"],
+    "strategy": "Use Aqualing as your front-line tank to absorb damage. Ember Pup deals consistent DPS from behind, while Sproutling keeps everyone healed and generates extra resources.",
+    "strengths": ["Easy to build at Lab Level 1-2", "Covers Tank + DPS + Support roles", "Sproutling generates passive income"],
+    "weaknesses": ["Low overall stats", "Weak against shadow-type enemies", "Falls off in mid-game"]
+  },
+  {
+    "id": "mid-game-rush",
+    "name": "Mid-Game Rush Team",
+    "description": "A speed-focused team that overwhelms opponents before they can react.",
+    "phase": "mid",
+    "monsters": ["flame-striker", "tidal-serpent", "chimera-scout"],
+    "strategy": "All three monsters have high speed stats. Open with Chimera Scout's Adaptive Shield, then unleash Flame Striker and Tidal Serpent's burst damage to end fights quickly.",
+    "strengths": ["Very high burst damage", "Multiple element coverage", "Fast combat resolution"],
+    "weaknesses": ["Low survivability", "No dedicated healer", "Struggles against tanky teams"]
+  },
+  {
+    "id": "resource-farm",
+    "name": "Resource Farming Team",
+    "description": "Optimized for maximizing essence and currency generation.",
+    "phase": "mid",
+    "monsters": ["sproutling", "steam-sprite", "stone-golem"],
+    "strategy": "Sproutling and Steam Sprite both generate resources passively. Stone Golem protects them in automated battles. Focus on resource maps and farming stages.",
+    "strengths": ["Maximum resource generation", "Self-sustaining economy", "Low maintenance"],
+    "weaknesses": ["Poor in PVP", "Low damage output", "Slow combat speed"]
+  },
+  {
+    "id": "late-game-power",
+    "name": "Late Game Powerhouse",
+    "description": "The ultimate PVE team for clearing the hardest content.",
+    "phase": "late",
+    "monsters": ["frost-leviathan", "void-reaper", "verdant-wyrm"],
+    "strategy": "Frost Leviathan tanks everything with its massive HP and defense. Void Reaper deals devastating damage while draining enemy HP. Verdant Wyrm keeps the team alive with powerful healing.",
+    "strengths": ["Extremely tanky frontline", "Sustained damage through life drain", "Strong healing and buffs"],
+    "weaknesses": ["Very expensive to build", "Requires Lab Level 8+", "Weak to burst damage teams"]
+  },
+  {
+    "id": "pvp-meta",
+    "name": "PVP Meta Team",
+    "description": "The current tournament meta. Built for competitive play.",
+    "phase": "pvp",
+    "monsters": ["shadow-imp", "solar-phoenix", "celestial-dragon"],
+    "strategy": "Shadow Imp opens with Backstab for massive first-strike damage. Solar Phoenix provides sustained DPS with Phoenix Rebirth as a safety net. Celestial Dragon supports with shields and resurrection.",
+    "strengths": ["First-strike advantage", "Phoenix Rebirth provides a second chance", "Celestial Dragon's resurrection is game-changing"],
+    "weaknesses": ["Requires Lab Level 10", "Shadow Imp is fragile", "Countered by teams with dispel abilities"]
+  }
+]

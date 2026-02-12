@@ -1,0 +1,66 @@
+[
+  {
+    "id": "early-fire-dps",
+    "name": "Early Fire DPS Combo",
+    "essences": ["fire", "fire", "neutral"],
+    "resultMonster": "ember-pup",
+    "description": "The go-to starter recipe. Ember Pup deals solid damage and is easy to create at Lab Level 1.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "starter-tank",
+    "name": "Beginner's Tank Build",
+    "essences": ["water", "neutral", "water"],
+    "resultMonster": "aqualing",
+    "description": "Your first defensive monster. Aqualing can absorb hits while your DPS monsters deal damage.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "resource-farmer",
+    "name": "Resource Farming Recipe",
+    "essences": ["nature", "nature", "neutral"],
+    "resultMonster": "sproutling",
+    "description": "Sproutling generates passive essence income. Create one early to boost your economy.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "pure-fire-power",
+    "name": "Pure Fire Power",
+    "essences": ["fire", "fire", "fire"],
+    "resultMonster": "flame-striker",
+    "description": "Triple fire essences create the devastating Flame Striker. A must-have for mid-game content.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "hybrid-attacker",
+    "name": "Hybrid Elemental Attacker",
+    "essences": ["neutral", "fire", "water"],
+    "resultMonster": "chimera-scout",
+    "description": "Mix opposing elements for a versatile fighter that adapts to any matchup.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "shadow-assassin",
+    "name": "Shadow Assassin Build",
+    "essences": ["shadow", "shadow", "neutral"],
+    "resultMonster": "shadow-imp",
+    "description": "The fastest monster in the game. Shadow Imp strikes before anyone else can react.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "holy-healer",
+    "name": "Holy Healer Recipe",
+    "essences": ["light", "light", "neutral"],
+    "resultMonster": "luminite",
+    "description": "Every team needs a healer. Luminite keeps your team alive through tough battles.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "legendary-ice-dragon",
+    "name": "Legendary Frost Dragon",
+    "essences": ["water", "water", "shadow"],
+    "resultMonster": "frost-leviathan",
+    "description": "The ultimate tank. Frost Leviathan has the highest defense in the game. Requires Lab Level 8.",
+    "difficulty": "hard"
+  }
+]

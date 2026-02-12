@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fire",
+    "name": "Fire Essence",
+    "unlockLevel": 1,
+    "description": "A volatile essence brimming with thermal energy. Core ingredient for fire-type monsters."
+  },
+  {
+    "id": "water",
+    "name": "Water Essence",
+    "unlockLevel": 1,
+    "description": "A flowing essence infused with aquatic power. Essential for water-type monsters."
+  },
+  {
+    "id": "nature",
+    "name": "Nature Essence",
+    "unlockLevel": 2,
+    "description": "A verdant essence pulsing with life force. Key component for nature-type monsters."
+  },
+  {
+    "id": "neutral",
+    "name": "Neutral Essence",
+    "unlockLevel": 1,
+    "description": "A balanced essence with no elemental affinity. Versatile ingredient for hybrid monsters."
+  },
+  {
+    "id": "shadow",
+    "name": "Shadow Essence",
+    "unlockLevel": 5,
+    "description": "A dark essence emanating mysterious energy. Required for shadow-type monsters."
+  },
+  {
+    "id": "light",
+    "name": "Light Essence",
+    "unlockLevel": 5,
+    "description": "A radiant essence glowing with holy power. Needed for light-type monsters."
+  }
+]
