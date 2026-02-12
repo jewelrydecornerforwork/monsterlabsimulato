@@ -194,7 +194,7 @@ export default function LabEconomyPage() {
         </div>
         <p className="mt-4 text-sm text-gray-500">
           Ready to build? Use our{" "}
-          <Link href="/#calculator" className="text-primary-light hover:text-primary">
+          <Link href="/tools/recipes" className="text-primary-light hover:text-primary">
             Recipe Calculator
           </Link>{" "}
           to plan efficient crafts. Check the{" "}

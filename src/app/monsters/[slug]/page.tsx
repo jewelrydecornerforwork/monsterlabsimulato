@@ -78,7 +78,7 @@ export default function MonsterDetailPage({ params }: PageProps) {
             Required Lab Level: <span className="text-white font-semibold">{monster.recipe.labLevel}</span>
           </p>
           <Link
-            href={`/?e1=${monster.recipe.essences[0]}&e2=${monster.recipe.essences[1]}&e3=${monster.recipe.essences[2]}#calculator`}
+            href={`/tools/recipes?e1=${monster.recipe.essences[0]}&e2=${monster.recipe.essences[1]}&e3=${monster.recipe.essences[2]}`}
             className="inline-flex items-center px-4 py-2 bg-primary hover:bg-primary-dark text-white text-sm font-medium rounded-lg transition-colors"
           >
             Try in Calculator

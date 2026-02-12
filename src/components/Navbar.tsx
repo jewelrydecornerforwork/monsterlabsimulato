@@ -5,8 +5,9 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/guide", label: "Guide" },
+  { href: "/tools/recipes", label: "Recipe Calculator" },
   { href: "/monsters", label: "Monsters" },
+  { href: "/guide", label: "Guide" },
 ];
 
 const wikiLinks = [

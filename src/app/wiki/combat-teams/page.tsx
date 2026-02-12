@@ -123,7 +123,7 @@ export default function CombatTeamsPage() {
         </div>
         <p className="mt-4 text-sm text-gray-500">
           Need help with crafting? Use our{" "}
-          <Link href="/#calculator" className="text-primary-light hover:text-primary">
+          <Link href="/tools/recipes" className="text-primary-light hover:text-primary">
             Recipe Calculator
           </Link>{" "}
           to plan your next monster.

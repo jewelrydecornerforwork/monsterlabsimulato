@@ -160,7 +160,7 @@ export default function GuidePage() {
           <p>
             <strong className="text-white">Don&apos;t waste essences randomly</strong> — save them for planned recipes.
             Use our{" "}
-            <Link href="/#calculator" className="text-primary-light hover:text-primary">
+            <Link href="/tools/recipes" className="text-primary-light hover:text-primary">
               Recipe Calculator
             </Link>{" "}
             to find the exact combination you need before committing resources.

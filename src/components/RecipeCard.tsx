@@ -45,7 +45,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
       <p className="text-sm text-gray-400 mb-4">{recipe.description}</p>
 
       <Link
-        href={`/?e1=${recipe.essences[0]}&e2=${recipe.essences[1]}&e3=${recipe.essences[2]}#calculator`}
+        href={`/tools/recipes?e1=${recipe.essences[0]}&e2=${recipe.essences[1]}&e3=${recipe.essences[2]}`}
         className="inline-flex items-center text-sm text-primary-light hover:text-primary font-medium transition-colors"
       >
         Try This Recipe &rarr;
