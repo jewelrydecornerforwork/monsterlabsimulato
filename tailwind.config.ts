@@ -54,6 +54,7 @@ const config: Config = {
         },
         rarity: {
           common: "#9CA3AF",
+          uncommon: "#2DD4BF",
           rare: "#3B82F6",
           epic: "#A855F7",
           legendary: "#F59E0B",

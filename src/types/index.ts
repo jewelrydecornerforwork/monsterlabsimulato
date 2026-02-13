@@ -1,6 +1,6 @@
 export type ElementType = "fire" | "water" | "nature" | "neutral" | "shadow" | "light";
-export type Rarity = "common" | "rare" | "epic" | "legendary";
-export type Role = "tank" | "dps" | "support";
+export type Rarity = "common" | "uncommon" | "rare" | "epic" | "legendary";
+export type Role = "tank" | "dps" | "support" | "utility";
 
 export interface Essence {
   id: ElementType;
@@ -27,6 +27,10 @@ export interface Monster {
   description: string;
   abilities: string[];
   lore: string;
+  family?: string;
+  habitat?: string;
+  stage?: "egg" | "juvenile" | "adult" | "ascended";
+  tags?: string[];
 }
 
 export interface Recipe {

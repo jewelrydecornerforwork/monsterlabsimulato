@@ -84,6 +84,7 @@ export const ELEMENT_GRADIENTS: Record<ElementType, string> = {
 
 export const RARITY_COLORS: Record<Rarity, string> = {
   common: "bg-rarity-common/20 text-rarity-common border-rarity-common/30",
+  uncommon: "bg-rarity-uncommon/20 text-rarity-uncommon border-rarity-uncommon/30",
   rare: "bg-rarity-rare/20 text-rarity-rare border-rarity-rare/30",
   epic: "bg-rarity-epic/20 text-rarity-epic border-rarity-epic/30",
   legendary: "bg-rarity-legendary/20 text-rarity-legendary border-rarity-legendary/30",
@@ -93,4 +94,5 @@ export const ROLE_COLORS: Record<string, string> = {
   tank: "bg-blue-500/20 text-blue-400 border-blue-500/30",
   dps: "bg-red-500/20 text-red-400 border-red-500/30",
   support: "bg-green-500/20 text-green-400 border-green-500/30",
+  utility: "bg-yellow-500/20 text-yellow-400 border-yellow-500/30",
 };

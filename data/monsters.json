@@ -13,7 +13,9 @@
     "recipe": { "essences": ["fire", "fire", "neutral"], "labLevel": 1 },
     "description": "A small fiery canine that packs a surprising punch. Great starter for new lab owners.",
     "abilities": ["Flame Bite", "Ember Dash"],
-    "lore": "Ember Pups are among the first monsters any lab owner creates. Despite their small size, their fiery temperament makes them fierce combatants."
+    "lore": "Ember Pups are among the first monsters any lab owner creates. Despite their small size, their fiery temperament makes them fierce combatants.",
+    "family": "Ignis",
+    "tags": ["starter", "fire", "melee"]
   },
   {
     "id": "flame-striker",
@@ -29,7 +31,9 @@
     "recipe": { "essences": ["fire", "fire", "fire"], "labLevel": 3 },
     "description": "A fearsome fire warrior with devastating attack power. The backbone of many fire-based teams.",
     "abilities": ["Inferno Slash", "Blazing Fury", "Fire Storm"],
-    "lore": "Born from pure concentrated fire essences, Flame Strikers are living embodiments of destruction. Their flames burn hot enough to melt steel."
+    "lore": "Born from pure concentrated fire essences, Flame Strikers are living embodiments of destruction. Their flames burn hot enough to melt steel.",
+    "family": "Ignis",
+    "tags": ["fire", "melee", "burst-damage"]
   },
   {
     "id": "magma-titan",
@@ -45,7 +49,9 @@
     "recipe": { "essences": ["fire", "fire", "nature"], "labLevel": 6 },
     "description": "A massive molten golem that absorbs damage and retaliates with volcanic fury.",
     "abilities": ["Molten Shield", "Lava Eruption", "Volcanic Slam"],
-    "lore": "When fire and nature essences clash in the synthesis chamber, the result is a creature of living magma. Magma Titans are nearly indestructible."
+    "lore": "When fire and nature essences clash in the synthesis chamber, the result is a creature of living magma. Magma Titans are nearly indestructible.",
+    "family": "Ignis",
+    "tags": ["fire", "tank", "counter-attack"]
   },
   {
     "id": "aqualing",
@@ -61,7 +67,9 @@
     "recipe": { "essences": ["water", "neutral", "water"], "labLevel": 1 },
     "description": "A sturdy water-type monster perfect for early game defense. Its liquid body absorbs physical attacks.",
     "abilities": ["Water Shield", "Bubble Blast"],
-    "lore": "Aqualings form when water essences bond with neutral energy. Their gelatinous bodies make them surprisingly durable in battle."
+    "lore": "Aqualings form when water essences bond with neutral energy. Their gelatinous bodies make them surprisingly durable in battle.",
+    "family": "Thalassa",
+    "tags": ["starter", "water", "defensive"]
   },
   {
     "id": "tidal-serpent",
@@ -77,7 +85,9 @@
     "recipe": { "essences": ["water", "water", "water"], "labLevel": 3 },
     "description": "A swift aquatic predator that strikes with the force of ocean currents.",
     "abilities": ["Tidal Wave", "Aqua Fang", "Whirlpool"],
-    "lore": "Tidal Serpents are the apex predators of the water element. Their speed in combat is matched only by their ferocity."
+    "lore": "Tidal Serpents are the apex predators of the water element. Their speed in combat is matched only by their ferocity.",
+    "family": "Thalassa",
+    "tags": ["water", "melee", "fast"]
   },
   {
     "id": "frost-leviathan",
@@ -93,7 +103,9 @@
     "recipe": { "essences": ["water", "water", "shadow"], "labLevel": 8 },
     "description": "An ancient ice dragon of immense power. One of the rarest monsters in existence.",
     "abilities": ["Absolute Zero", "Ice Age", "Glacial Fortress", "Frozen Domain"],
-    "lore": "Legends say the Frost Leviathan existed before the labs were built. Recreating one requires mastery of both water and shadow essences."
+    "lore": "Legends say the Frost Leviathan existed before the labs were built. Recreating one requires mastery of both water and shadow essences.",
+    "family": "Thalassa",
+    "tags": ["water", "legendary", "boss-tier", "crowd-control"]
   },
   {
     "id": "sproutling",
@@ -109,7 +121,9 @@
     "recipe": { "essences": ["nature", "nature", "neutral"], "labLevel": 2 },
     "description": "A cheerful plant monster that heals allies and generates resources over time.",
     "abilities": ["Healing Bloom", "Photosynthesis"],
-    "lore": "Sproutlings are beloved by lab owners for their ability to generate essence residue, making them excellent resource farmers."
+    "lore": "Sproutlings are beloved by lab owners for their ability to generate essence residue, making them excellent resource farmers.",
+    "family": "Sylva",
+    "tags": ["starter", "nature", "healer", "farming"]
   },
   {
     "id": "thornback",
@@ -125,7 +139,9 @@
     "recipe": { "essences": ["nature", "nature", "nature"], "labLevel": 4 },
     "description": "A heavily armored plant beast covered in razor-sharp thorns. Attackers take damage just by hitting it.",
     "abilities": ["Thorn Armor", "Root Slam", "Vine Trap"],
-    "lore": "The Thornback's defensive capabilities are legendary. Its thorns grow back stronger each time they're broken."
+    "lore": "The Thornback's defensive capabilities are legendary. Its thorns grow back stronger each time they're broken.",
+    "family": "Sylva",
+    "tags": ["nature", "tank", "counter-attack", "crowd-control"]
   },
   {
     "id": "verdant-wyrm",
@@ -141,7 +157,9 @@
     "recipe": { "essences": ["nature", "nature", "light"], "labLevel": 7 },
     "description": "A majestic forest dragon that empowers allies with the essence of life itself.",
     "abilities": ["Nature's Blessing", "Rejuvenation", "Forest Guardian"],
-    "lore": "Verdant Wyrms are the spiritual guardians of nature. Their presence alone causes plants to grow and allies to feel reinvigorated."
+    "lore": "Verdant Wyrms are the spiritual guardians of nature. Their presence alone causes plants to grow and allies to feel reinvigorated.",
+    "family": "Sylva",
+    "tags": ["nature", "healer", "buff", "dragon"]
   },
   {
     "id": "stone-golem",
@@ -157,7 +175,9 @@
     "recipe": { "essences": ["neutral", "neutral", "neutral"], "labLevel": 1 },
     "description": "A solid rock construct with impressive durability. The simplest tank monster to create.",
     "abilities": ["Rock Wall", "Stone Fist"],
-    "lore": "Stone Golems require nothing but neutral essence to create, making them accessible to even the newest lab owners."
+    "lore": "Stone Golems require nothing but neutral essence to create, making them accessible to even the newest lab owners.",
+    "family": "Terra",
+    "tags": ["starter", "neutral", "tank", "defensive"]
   },
   {
     "id": "chimera-scout",
@@ -173,7 +193,9 @@
     "recipe": { "essences": ["neutral", "fire", "water"], "labLevel": 3 },
     "description": "A versatile hybrid monster that adapts to any situation. Jack of all trades.",
     "abilities": ["Elemental Strike", "Adaptive Shield", "Multi-Attack"],
-    "lore": "Created from opposing elements bound by neutral essence, Chimera Scouts are unpredictable fighters that keep opponents guessing."
+    "lore": "Created from opposing elements bound by neutral essence, Chimera Scouts are unpredictable fighters that keep opponents guessing.",
+    "family": "Terra",
+    "tags": ["neutral", "hybrid", "versatile"]
   },
   {
     "id": "shadow-imp",
@@ -189,7 +211,9 @@
     "recipe": { "essences": ["shadow", "shadow", "neutral"], "labLevel": 5 },
     "description": "A mischievous dark creature that strikes from the shadows with devastating speed.",
     "abilities": ["Shadow Strike", "Dark Blink", "Backstab"],
-    "lore": "Shadow Imps exist between dimensions, making them nearly impossible to catch. Their attacks come from angles that shouldn't be possible."
+    "lore": "Shadow Imps exist between dimensions, making them nearly impossible to catch. Their attacks come from angles that shouldn't be possible.",
+    "family": "Nyx",
+    "tags": ["shadow", "assassin", "fast", "glass-cannon"]
   },
   {
     "id": "void-reaper",
@@ -205,7 +229,9 @@
     "recipe": { "essences": ["shadow", "shadow", "shadow"], "labLevel": 7 },
     "description": "A terrifying entity from the void. Its attacks drain the life force of enemies.",
     "abilities": ["Void Slash", "Soul Drain", "Dark Dimension"],
-    "lore": "The Void Reaper is not truly created — it is summoned. Three shadow essences open a rift from which this entity emerges."
+    "lore": "The Void Reaper is not truly created — it is summoned. Three shadow essences open a rift from which this entity emerges.",
+    "family": "Nyx",
+    "tags": ["shadow", "lifesteal", "burst-damage"]
   },
   {
     "id": "abyssal-lord",
@@ -221,7 +247,9 @@
     "recipe": { "essences": ["shadow", "shadow", "fire"], "labLevel": 10 },
     "description": "The ultimate shadow monster. Commands the power of the abyss to annihilate all opposition.",
     "abilities": ["Abyssal Flame", "Doom Blade", "Endless Night", "Annihilation"],
-    "lore": "Only the most skilled lab owners dare attempt creating an Abyssal Lord. The fusion of shadow and fire produces a being of cataclysmic power."
+    "lore": "Only the most skilled lab owners dare attempt creating an Abyssal Lord. The fusion of shadow and fire produces a being of cataclysmic power.",
+    "family": "Nyx",
+    "tags": ["shadow", "legendary", "boss-tier", "burst-damage"]
   },
   {
     "id": "luminite",
@@ -237,7 +265,9 @@
     "recipe": { "essences": ["light", "light", "neutral"], "labLevel": 5 },
     "description": "A radiant spirit that purifies allies and weakens dark enemies.",
     "abilities": ["Holy Light", "Purify", "Radiant Aura"],
-    "lore": "Luminites are drawn to places of purity. Their healing light can cure even the most potent shadow corruption."
+    "lore": "Luminites are drawn to places of purity. Their healing light can cure even the most potent shadow corruption.",
+    "family": "Aether",
+    "tags": ["light", "healer", "anti-shadow", "buff"]
   },
   {
     "id": "solar-phoenix",
@@ -253,7 +283,9 @@
     "recipe": { "essences": ["light", "light", "fire"], "labLevel": 7 },
     "description": "A blazing bird of golden flames that can resurrect itself once per battle.",
     "abilities": ["Solar Flare", "Phoenix Rebirth", "Divine Judgment"],
-    "lore": "The Solar Phoenix represents the pinnacle of light and fire synthesis. Its ability to return from defeat makes it a tournament favorite."
+    "lore": "The Solar Phoenix represents the pinnacle of light and fire synthesis. Its ability to return from defeat makes it a tournament favorite.",
+    "family": "Aether",
+    "tags": ["light", "revive", "burst-damage", "pvp"]
   },
   {
     "id": "celestial-dragon",
@@ -269,7 +301,9 @@
     "recipe": { "essences": ["light", "light", "light"], "labLevel": 10 },
     "description": "The most sacred monster in existence. Its divine power can turn the tide of any battle.",
     "abilities": ["Celestial Blessing", "Divine Shield", "Holy Resurrection", "Starfall"],
-    "lore": "Ancient texts speak of the Celestial Dragon as a guardian of balance. Creating one is considered the ultimate achievement for any lab owner."
+    "lore": "Ancient texts speak of the Celestial Dragon as a guardian of balance. Creating one is considered the ultimate achievement for any lab owner.",
+    "family": "Aether",
+    "tags": ["light", "legendary", "boss-tier", "healer", "dragon"]
   },
   {
     "id": "steam-sprite",
@@ -285,6 +319,44 @@
     "recipe": { "essences": ["water", "fire", "neutral"], "labLevel": 2 },
     "description": "A bubbly steam elemental that boosts ally speed and provides light healing.",
     "abilities": ["Steam Cloud", "Mist Heal"],
-    "lore": "When fire meets water in the synthesis chamber, sometimes the result is not an explosion but a playful Steam Sprite."
+    "lore": "When fire meets water in the synthesis chamber, sometimes the result is not an explosion but a playful Steam Sprite.",
+    "family": "Thalassa",
+    "tags": ["water", "healer", "buff", "hybrid"]
+  },
+  {
+    "id": "glyph-fox",
+    "name": "Glyph Fox",
+    "slug": "glyph-fox",
+    "element": "neutral",
+    "rarity": "uncommon",
+    "role": "utility",
+    "hp": 135,
+    "attack": 55,
+    "defense": 55,
+    "speed": 70,
+    "recipe": { "essences": ["neutral", "neutral", "light"], "labLevel": 3 },
+    "description": "A cunning fox spirit inscribed with ancient glyphs. Scouts terrain and reveals hidden items.",
+    "abilities": ["Glyph Scan", "Fox Fire", "Terrain Sense"],
+    "lore": "Glyph Foxes were once used by ancient lab keepers to map uncharted territories. Their innate curiosity makes them invaluable scouts.",
+    "family": "Terra",
+    "tags": ["neutral", "scouting", "resource-gathering", "versatile"]
+  },
+  {
+    "id": "mist-weaver",
+    "name": "Mist Weaver",
+    "slug": "mist-weaver",
+    "element": "water",
+    "rarity": "uncommon",
+    "role": "utility",
+    "hp": 125,
+    "attack": 45,
+    "defense": 60,
+    "speed": 60,
+    "recipe": { "essences": ["water", "water", "neutral"], "labLevel": 3 },
+    "description": "A graceful aquatic spirit that manipulates battlefield conditions with dense fog.",
+    "abilities": ["Fog Veil", "Dew Drop", "Mist Walk"],
+    "lore": "Mist Weavers bend moisture in the air to create elaborate illusions. In battle, their fog confuses enemies while shielding allies.",
+    "family": "Thalassa",
+    "tags": ["water", "crowd-control", "evasion", "defensive"]
   }
 ]

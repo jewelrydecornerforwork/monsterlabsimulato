@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ElementType, Rarity, Role } from "@/types";
 import { getAllMonsters } from "@/lib/data";
-import FilterBar from "@/components/FilterBar";
-import MonsterCard from "@/components/MonsterCard";
+import MonstersPageLayout from "@/components/monsters/MonstersPageLayout";
+import MonstersOverviewStats from "@/components/monsters/MonstersOverviewStats";
+import MonstersFilterBar from "@/components/monsters/MonstersFilterBar";
+import MonstersGrid from "@/components/monsters/MonstersGrid";
+import SEOArticle from "@/components/SEOArticle";
 
 export default function MonstersPage() {
   const allMonsters = getAllMonsters();
@@ -29,55 +33,86 @@ export default function MonstersPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Hero */}
-      <section className="mb-8">
-        <h1 className="text-4xl font-bold text-white mb-2">Monster Database</h1>
-        <p className="text-gray-400 mb-8">
-          Browse all {allMonsters.length} monsters. Search by name or filter by element, rarity, and role.
-        </p>
-        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
-          <span className="text-sm text-gray-500">Monster Database banner &mdash; Fulu lineup or collection screenshot</span>
+    <MonstersPageLayout>
+      {/* Page Header */}
+      <section>
+        <div className="flex items-center gap-3 mb-2">
+          <h1 className="text-3xl font-semibold text-white">Fulu Database</h1>
+          <span className="inline-flex items-center rounded-full bg-surface-light/30 px-3 py-1 text-xs font-medium text-gray-300">
+            {allMonsters.length} entries
+          </span>
         </div>
+        <p className="text-sm text-gray-500 max-w-2xl">
+          Browse every known Fulu in Monster Lab Simulator &mdash; filter by element, rarity, role,
+          and more to plan your ideal lab roster.
+        </p>
       </section>
 
+      {/* Overview Stats */}
+      <MonstersOverviewStats monsters={allMonsters} />
+
       {/* Filters */}
-      <div className="mb-8">
-        <FilterBar
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedElement={selectedElement}
-          onElementChange={setSelectedElement}
-          selectedRarity={selectedRarity}
-          onRarityChange={setSelectedRarity}
-          selectedRole={selectedRole}
-          onRoleChange={setSelectedRole}
-          onReset={handleReset}
-        />
-      </div>
+      <MonstersFilterBar
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        selectedElement={selectedElement}
+        onElementChange={setSelectedElement}
+        selectedRarity={selectedRarity}
+        onRarityChange={setSelectedRarity}
+        selectedRole={selectedRole}
+        onRoleChange={setSelectedRole}
+        onReset={handleReset}
+      />
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {filtered.map((m) => (
-          <MonsterCard key={m.id} monster={m} />
-        ))}
-      </div>
+      {/* Monster Grid */}
+      <MonstersGrid monsters={filtered} onReset={handleReset} />
 
-      {filtered.length === 0 && (
-        <div className="text-center py-16">
-          <p className="text-gray-500 text-lg">No monsters match your filters.</p>
-          <button
-            onClick={handleReset}
-            className="mt-4 text-primary-light hover:text-primary transition-colors"
-          >
-            Reset all filters
-          </button>
-        </div>
-      )}
+      {/* SEO Text Block */}
+      <section className="max-w-3xl mx-auto">
+        <SEOArticle>
+          <h2>What Are Fulus in Monster Lab Simulator?</h2>
+          <p>
+            Fulus are the creatures you synthesize, train, and deploy in Monster Lab Simulator.
+            Every Fulu is born from a unique combination of elemental essences mixed inside your lab,
+            and each one belongs to a family lineage that influences its growth potential. From the
+            humble Ember Pup to the legendary Celestial Dragon, the world of Fulus is vast and
+            rewarding to explore.
+          </p>
 
-      <div className="mt-8 text-center text-sm text-gray-500">
-        Showing {filtered.length} of {allMonsters.length} monsters
-      </div>
-    </div>
+          <h2>Elements, Rarities, and Roles Explained</h2>
+          <p>
+            Each Fulu is defined by three core attributes. Its <strong>element</strong> (Fire, Water,
+            Nature, Neutral, Shadow, or Light) determines type matchups and essence requirements.
+            Its <strong>rarity</strong> ranges from Common through Legendary, reflecting both the
+            difficulty of creation and raw power ceiling. Finally, its <strong>role</strong> &mdash;
+            Tank, DPS, Support, or Utility &mdash; dictates how it fits into a balanced team
+            composition. Understanding these three axes is key to building a competitive roster.
+          </p>
+
+          <h2>Building Your Ideal Lab Roster</h2>
+          <p>
+            Use the filters above to narrow down Fulus by any combination of element, rarity, and
+            role. Planning a fire-heavy assault squad? Filter for Fire DPS monsters. Need a reliable
+            healer for late-game content? Look at Nature and Light supports. Each card links to a
+            detailed profile page with full stats, crafting recipes, and ability breakdowns.
+          </p>
+
+          <h2>Companion Tools and Guides</h2>
+          <p>
+            This database works best alongside our other resources. Use the{" "}
+            <Link href="/tools/recipes" className="text-primary-light hover:text-primary">
+              Recipe Calculator
+            </Link>{" "}
+            to discover which essence combinations produce each Fulu, or read our{" "}
+            <Link href="/guide" className="text-primary-light hover:text-primary">
+              Beginner&apos;s Guide
+            </Link>{" "}
+            for step-by-step strategies on lab management, team synergies, and resource optimization.
+            Whether you are just starting out or min-maxing for PvP, these tools will help you get
+            the most out of every experiment.
+          </p>
+        </SEOArticle>
+      </section>
+    </MonstersPageLayout>
   );
 }
