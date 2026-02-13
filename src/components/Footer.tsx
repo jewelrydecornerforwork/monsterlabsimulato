@@ -6,11 +6,13 @@ const footerLinks = [
     links: [
       { href: "/", label: "Recipe Calculator" },
       { href: "/monsters", label: "Monster Database" },
+      { href: "/media", label: "Media Gallery" },
     ],
   },
   {
     title: "Guides",
     links: [
+      { href: "/guides", label: "Guides Hub" },
       { href: "/guide", label: "Beginner's Guide" },
       { href: "/wiki/essences-eggs", label: "Essences & Eggs" },
       { href: "/wiki/combat-teams", label: "Combat & Teams" },

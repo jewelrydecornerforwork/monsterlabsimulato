@@ -7,7 +7,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/tools/recipes", label: "Recipe Calculator" },
   { href: "/monsters", label: "Monsters" },
-  { href: "/guide", label: "Guide" },
+  { href: "/guides", label: "Guides" },
+  { href: "/media", label: "Media" },
 ];
 
 const wikiLinks = [
