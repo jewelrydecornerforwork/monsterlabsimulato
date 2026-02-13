@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getTeams } from "@/lib/data";
 import TeamCard from "@/components/TeamCard";
 

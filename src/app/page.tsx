@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import FAQ from "@/components/FAQ";
 
 const features = [
@@ -116,6 +117,17 @@ export default function HomePage() {
               Browse Monster Database
             </Link>
           </div>
+          <div className="grid grid-cols-3 gap-3 mt-10 max-w-3xl mx-auto">
+            <div className="relative aspect-[16/9] rounded-lg overflow-hidden">
+              <Image src="/images/screenshots/lab-robot-portals.jpg" alt="Monster Lab Simulator lab hub with robot assistant and biome portals" fill className="object-cover" sizes="(max-width: 768px) 33vw, 256px" />
+            </div>
+            <div className="relative aspect-[16/9] rounded-lg overflow-hidden">
+              <Image src="/images/screenshots/fire-egg-glow.jpg" alt="Glowing fire egg in the Monster Lab Simulator synthesis area" fill className="object-cover" sizes="(max-width: 768px) 33vw, 256px" />
+            </div>
+            <div className="relative aspect-[16/9] rounded-lg overflow-hidden">
+              <Image src="/images/screenshots/fulu-labs-waiting.jpg" alt="Two Fulu creatures at the Fulu Laboratories workstation" fill className="object-cover" sizes="(max-width: 768px) 33vw, 256px" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -137,8 +149,8 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "4/3" }}>
-              <span className="text-sm text-gray-500">Feature Image &mdash; Fulu lineup or key art</span>
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ aspectRatio: "4/3" }}>
+              <Image src="/images/screenshots/fulu-labs-main.jpg" alt="Fulu Laboratories main hall — holding a fox Fulu with the full lab visible" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
           </div>
         </section>

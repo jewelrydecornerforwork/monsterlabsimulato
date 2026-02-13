@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getAllEssences, getMonstersByElement } from "@/lib/data";
+import Image from "next/image";
 import EssenceIcon from "@/components/EssenceIcon";
 import MonsterCard from "@/components/MonsterCard";
 import { ElementType } from "@/types";
