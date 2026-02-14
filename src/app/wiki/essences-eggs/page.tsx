@@ -36,8 +36,8 @@ export default function EssencesEggsPage() {
         <p className="text-xl text-gray-400 mb-8">
           Master the foundation of monster breeding
         </p>
-        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
-          <span className="text-sm text-gray-500">Essences &amp; Eggs banner &mdash; essence vials or egg hatching screenshot</span>
+        <div className="w-full rounded-xl overflow-hidden relative" style={{ aspectRatio: "21/9" }}>
+          <Image src="/images/screenshots/fire-egg-essence-machines.jpg" alt="Monster Lab Simulator — Glowing fire egg near essence crafting machines" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1024px" />
         </div>
       </section>
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MediaItem } from "@/types/media";
 
 interface MediaCardProps {
@@ -15,16 +16,30 @@ function tagLabel(tag: string) {
     .join(" ");
 }
 
+function isRealImage(url: string) {
+  return url.startsWith("/");
+}
+
 export default function MediaCard({ item }: MediaCardProps) {
   return (
     <div className="rounded-xl bg-surface border border-surface-light/30 overflow-hidden hover:border-primary/50 transition-all duration-200 hover:shadow-lg hover:shadow-primary/10 group flex flex-col">
-      {/* Gradient thumbnail placeholder */}
-      <div
-        className={`aspect-[16/9] ${item.thumbnailUrl} flex items-center justify-center relative`}
-      >
-        <span className="text-4xl font-bold text-white/25 group-hover:text-white/40 transition-colors select-none">
-          {item.title.charAt(0)}
-        </span>
+      {/* Thumbnail */}
+      <div className="aspect-[16/9] relative overflow-hidden">
+        {isRealImage(item.thumbnailUrl) ? (
+          <Image
+            src={item.thumbnailUrl}
+            alt={item.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : (
+          <div className={`w-full h-full ${item.thumbnailUrl} flex items-center justify-center`}>
+            <span className="text-4xl font-bold text-white/25 group-hover:text-white/40 transition-colors select-none">
+              {item.title.charAt(0)}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Content */}

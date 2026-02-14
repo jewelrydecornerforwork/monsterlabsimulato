@@ -23,8 +23,8 @@ export default function CombatTeamsPage() {
         <p className="text-xl text-gray-400 mb-8">
           Master turn-based combat and build unbeatable monster teams
         </p>
-        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
-          <span className="text-sm text-gray-500">Combat banner &mdash; battle UI or team lineup screenshot</span>
+        <div className="w-full rounded-xl overflow-hidden relative" style={{ aspectRatio: "21/9" }}>
+          <Image src="/images/screenshots/battle-fire-creatures.jpg" alt="Monster Lab Simulator — Fulu battle arena with fire-type creatures fighting" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1024px" />
         </div>
       </section>
 

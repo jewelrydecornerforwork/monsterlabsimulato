@@ -21,8 +21,8 @@ export default function GuidePage() {
         <p className="text-xl text-gray-400 mb-8">
           Everything you need to know in your first 3 hours
         </p>
-        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
-          <span className="text-sm text-gray-500">Guide hero banner &mdash; tutorial or lab overview screenshot</span>
+        <div className="w-full rounded-xl overflow-hidden relative" style={{ aspectRatio: "21/9" }}>
+          <Image src="/images/screenshots/fulu-labs-fox-main.jpg" alt="Monster Lab Simulator — Fulu Laboratories main hall overview" fill className="object-cover" sizes="(max-width: 768px) 100vw, 896px" />
         </div>
       </section>
 

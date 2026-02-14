@@ -58,8 +58,8 @@ export default function LabEconomyPage() {
         <p className="text-xl text-gray-400 mb-8">
           Optimize your lab for maximum efficiency and profit
         </p>
-        <div className="w-full rounded-xl border-2 border-dashed border-surface-light/40 bg-surface/60 flex items-center justify-center text-center p-6" style={{ aspectRatio: "21/9" }}>
-          <span className="text-sm text-gray-500">Lab Economy banner &mdash; lab layout or machine upgrade screenshot</span>
+        <div className="w-full rounded-xl overflow-hidden relative" style={{ aspectRatio: "21/9" }}>
+          <Image src="/images/screenshots/lab-robot-heart-overview.jpg" alt="Monster Lab Simulator — Lab overview with robot assistant and biome portals" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1024px" />
         </div>
       </section>
 

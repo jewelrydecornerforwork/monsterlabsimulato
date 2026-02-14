@@ -9,8 +9,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-shadow",
-    "fullImageUrl": "gradient-shadow"
+    "thumbnailUrl": "/images/screenshots/lab-main-floor-dark-fulu.jpg",
+    "fullImageUrl": "/images/screenshots/lab-main-floor-dark-fulu.jpg"
   },
   {
     "id": "media-002",
@@ -22,8 +22,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-fire",
-    "fullImageUrl": "gradient-fire"
+    "thumbnailUrl": "/images/screenshots/fire-egg-essence-machines.jpg",
+    "fullImageUrl": "/images/screenshots/fire-egg-essence-machines.jpg"
   },
   {
     "id": "media-003",
@@ -35,8 +35,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-nature",
-    "fullImageUrl": "gradient-nature"
+    "thumbnailUrl": "/images/screenshots/egg-tray-essence-vials.jpg",
+    "fullImageUrl": "/images/screenshots/egg-tray-essence-vials.jpg"
   },
   {
     "id": "media-004",
@@ -47,8 +47,8 @@
     "systemTags": ["Combat"],
     "sourceName": "IndieDB",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-fire",
-    "fullImageUrl": "gradient-fire"
+    "thumbnailUrl": "/images/screenshots/combat-arena-energy-attack.jpg",
+    "fullImageUrl": "/images/screenshots/combat-arena-energy-attack.jpg"
   },
   {
     "id": "media-005",
@@ -60,8 +60,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-water",
-    "fullImageUrl": "gradient-water"
+    "thumbnailUrl": "/images/screenshots/ice-biome-team-stats.jpg",
+    "fullImageUrl": "/images/screenshots/ice-biome-team-stats.jpg"
   },
   {
     "id": "media-006",
@@ -72,8 +72,8 @@
     "systemTags": ["UI & HUD"],
     "sourceName": "YouTube capture",
     "resolution": "1280x720",
-    "thumbnailUrl": "gradient-neutral",
-    "fullImageUrl": "gradient-neutral"
+    "thumbnailUrl": "/images/screenshots/battle-command-room.jpg",
+    "fullImageUrl": "/images/screenshots/battle-command-room.jpg"
   },
   {
     "id": "media-007",
@@ -85,8 +85,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-light",
-    "fullImageUrl": "gradient-light"
+    "thumbnailUrl": "/images/screenshots/fulu-labs-fox-main.jpg",
+    "fullImageUrl": "/images/screenshots/fulu-labs-fox-main.jpg"
   },
   {
     "id": "media-008",
@@ -98,8 +98,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-shadow",
-    "fullImageUrl": "gradient-shadow"
+    "thumbnailUrl": "/images/screenshots/lab-robot-heart-overview.jpg",
+    "fullImageUrl": "/images/screenshots/lab-robot-heart-overview.jpg"
   },
   {
     "id": "media-009",
@@ -111,8 +111,8 @@
     "sourceName": "Steam",
     "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
     "resolution": "1920x1080",
-    "thumbnailUrl": "gradient-nature",
-    "fullImageUrl": "gradient-nature"
+    "thumbnailUrl": "/images/screenshots/fulu-workstation-creatures.jpg",
+    "fullImageUrl": "/images/screenshots/fulu-workstation-creatures.jpg"
   },
   {
     "id": "media-010",
@@ -123,7 +123,46 @@
     "systemTags": ["UI & HUD"],
     "sourceName": "IndieDB",
     "resolution": "1280x720",
-    "thumbnailUrl": "gradient-neutral",
-    "fullImageUrl": "gradient-neutral"
+    "thumbnailUrl": "/images/screenshots/lab-entrance-fire-hazard.jpg",
+    "fullImageUrl": "/images/screenshots/lab-entrance-fire-hazard.jpg"
+  },
+  {
+    "id": "media-011",
+    "slug": "fire-biome-portal",
+    "title": "Fire Biome Portal",
+    "description": "The fire biome portal entrance with volcanic landscape visible through the gateway and access control panel.",
+    "tags": ["habitats", "lab"],
+    "systemTags": ["Habitats", "Lab & machines"],
+    "sourceName": "Steam",
+    "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
+    "resolution": "1920x1080",
+    "thumbnailUrl": "/images/screenshots/fire-biome-portal-lava.jpg",
+    "fullImageUrl": "/images/screenshots/fire-biome-portal-lava.jpg"
+  },
+  {
+    "id": "media-012",
+    "slug": "nature-biome-egg-hatching",
+    "title": "Nature Biome & Egg Hatching",
+    "description": "The nature biome portal with lush green landscape, player holding a freshly crafted egg near synthesis machines.",
+    "tags": ["habitats", "eggs"],
+    "systemTags": ["Habitats", "Eggs & incubation"],
+    "sourceName": "Steam",
+    "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
+    "resolution": "1920x1080",
+    "thumbnailUrl": "/images/screenshots/nature-biome-egg-portal.jpg",
+    "fullImageUrl": "/images/screenshots/nature-biome-egg-portal.jpg"
+  },
+  {
+    "id": "media-013",
+    "slug": "fulu-battle-arena-fight",
+    "title": "Fulu Battle — Arena Fight",
+    "description": "Intense arena battle with fire-type Fulus clashing on the battlefield, HP bars and team indicators visible.",
+    "tags": ["combat", "roster"],
+    "systemTags": ["Combat"],
+    "sourceName": "Steam",
+    "sourceUrl": "https://store.steampowered.com/app/3994610/Monster_Lab_Simulator/",
+    "resolution": "1920x1080",
+    "thumbnailUrl": "/images/screenshots/battle-fire-creatures.jpg",
+    "fullImageUrl": "/images/screenshots/battle-fire-creatures.jpg"
   }
 ]
